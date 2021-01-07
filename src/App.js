@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import "./App.css";
-import Form from "./components/Form";
-import ContactList from "./components/ContactList";
+import Form from "./components/Form.js";
+import ContactList from "./components/ContactList.js";
 
 class App extends Component {
   state = {
     contacts: [],
     name: "",
   };
-  addContant = (contact) => {
+  addContact = (contact) => {
     this.setState({
       contacts: [...this.state.contacts, contact],
     });
@@ -16,11 +16,12 @@ class App extends Component {
   render() {
     return (
       <>
-        <h1>Phonebook</h1>
-        <Form addContant={this.state.contacts} />
-        <ContactList contacts={this.state.contacts}/>
+        <h1>PhoneBook</h1>
+        <Form addContact={this.addContact} />
+        <ContactList contacts={this.state.contacts} />
       </>
     );
   }
 }
+
 export default App;
