@@ -1,0 +1,11 @@
+.section {
+    display: flex;
+    background-size: 100%;
+    background-position: left;
+    background-repeat: no-repeat;
+    justify-content: left;
+    align-items: left;
+    flex-flow: column;
+    width: auto;
+    height: fit-content;
+  }

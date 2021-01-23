@@ -1,0 +1,19 @@
+.li {
+    align-items: center;
+    display: flex;
+  }
+
+.p {
+    font-weight: bold;
+    margin-right: 15px;
+    font-weight: bold;
+    color: transparent;
+	-webkit-background-clip: text;
+	background-clip: text;
+	background-color:black;
+  }
+
+.button {
+      height: 18px;
+      width: 60px;
+  }
